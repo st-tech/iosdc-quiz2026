@@ -10,19 +10,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '07d2',
-				text: 'パンダ',
+				text: 'ポケット',
 			},
 			{
 				id: 'e5ab',
-				text: 'ゴリラ',
+				text: 'ロサンゼルス',
 			},
 			{
 				id: '2ebd',
-				text: 'モンキー',
+				text: 'ゴリラ',
 			},
 			{
 				id: '58fc',
-				text: 'タイガー',
+				text: 'ブラック',
 			},
 		],
 	},
@@ -34,19 +34,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: 'a548',
-				text: '輸入レコード・CDのカタログ販売',
+				text: '古着屋の実店舗',
 			},
 			{
 				id: 'fa5b',
-				text: '古着の通信販売',
+				text: '輸入レコード・CDのカタログ販売',
 			},
 			{
 				id: '8170',
-				text: '輸入雑貨のネット販売',
+				text: '雑誌の出版',
 			},
 			{
 				id: '4595',
-				text: '音楽イベントの企画運営',
+				text: 'ライブハウス運営',
 			},
 		],
 	},
@@ -59,19 +59,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '2cbf',
-				text: 'LA BOO',
+				text: 'LE MARIA',
 			},
 			{
 				id: 'dfe2',
-				text: 'ZOZOVILLA',
+				text: 'LA BOO',
 			},
 			{
 				id: 'c118',
-				text: 'ZOZOUSED',
+				text: 'LA OHANA',
 			},
 			{
 				id: '3e2a',
-				text: 'WEAR',
+				text: 'LA GOON',
 			},
 		],
 	},
@@ -87,7 +87,7 @@ export const QUESTIONS = [
 			},
 			{
 				id: 'e992',
-				text: '50,000円',
+				text: '54,000円',
 			},
 			{
 				id: '1d91',
@@ -95,7 +95,7 @@ export const QUESTIONS = [
 			},
 			{
 				id: 'd498',
-				text: '200,000円',
+				text: '500,000円',
 			},
 		],
 	},
@@ -107,11 +107,11 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: 'd759',
-				text: '約850万人',
+				text: '約550万人',
 			},
 			{
 				id: '46ce',
-				text: '約1,050万人',
+				text: '約800万人',
 			},
 			{
 				id: 'c212',
@@ -119,7 +119,7 @@ export const QUESTIONS = [
 			},
 			{
 				id: '0cc0',
-				text: '約1,550万人',
+				text: '約3,000万人',
 			},
 		],
 	},
@@ -131,19 +131,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '1c6c',
-				text: 'やってみよう・生み出そう・頼られよう',
+				text: 'ソウゾウしよう・生み出そう・頼られよう',
 			},
 			{
 				id: '78b6',
-				text: 'やってみよう・つくりだそう・信頼されよう',
+				text: 'やってみよう・助け合おう・頼られよう',
 			},
 			{
 				id: '5ad4',
-				text: '挑戦しよう・生み出そう・頼られよう',
+				text: 'やってみよう・生み出そう・頼られよう',
 			},
 			{
 				id: '5e97',
-				text: 'やってみよう・生み出そう・愛されよう',
+				text: 'ソウゾウしよう・助け合おう・信じよう',
 			},
 		],
 	},
@@ -155,19 +155,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: 'b155',
-				text: '浅野忠信',
+				text: '木梨憲武',
 			},
 			{
 				id: '20ba',
-				text: 'オダギリジョー',
+				text: '浅野忠信',
 			},
 			{
 				id: '6cc8',
-				text: '永瀬正敏',
+				text: '明石家さんま',
 			},
 			{
 				id: 'f562',
-				text: '豊川悦司',
+				text: '江頭2:50',
 			},
 		],
 	},
@@ -179,19 +179,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: 'f189',
-				text: 'テゲバジャーロ',
+				text: 'テバゲジャーロ',
 			},
 			{
 				id: '5df5',
-				text: 'ホンダロック',
+				text: 'サンシャインズ',
 			},
 			{
 				id: '37f9',
-				text: 'ヴェロスクロノス',
+				text: 'テゲバジャーロ',
 			},
 			{
 				id: 'b8a6',
-				text: 'アビスパ',
+				text: 'ヴィアマテラス',
 			},
 		],
 	},
@@ -253,19 +253,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '2d3f',
-				text: '4月1日',
+				text: '12月15日',
 			},
 			{
 				id: 'a4c9',
-				text: '5月1日',
-			},
-			{
-				id: '7e59',
 				text: '5月21日',
 			},
 			{
+				id: '7e59',
+				text: '12月11日',
+			},
+			{
 				id: '581c',
-				text: '6月21日',
+				text: '2月15日',
 			},
 		],
 	},
@@ -277,11 +277,11 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '0b5d',
-				text: '2003年12月15日',
+				text: '2000年12月15日',
 			},
 			{
 				id: 'aaab',
-				text: '2004年4月1日',
+				text: '2002年12月15日',
 			},
 			{
 				id: 'f3e6',
@@ -289,7 +289,7 @@ export const QUESTIONS = [
 			},
 			{
 				id: 'ea50',
-				text: '2005年12月15日',
+				text: '2006年12月15日',
 			},
 		],
 	},
@@ -337,15 +337,15 @@ export const QUESTIONS = [
 			},
 			{
 				id: '0776',
-				text: '2017年4月',
-			},
-			{
-				id: '68ae',
 				text: '2017年11月',
 			},
 			{
+				id: '68ae',
+				text: '2018年11月',
+			},
+			{
 				id: 'ea2e',
-				text: '2018年1月',
+				text: '2019年11月',
 			},
 		],
 	},
@@ -357,19 +357,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '0b98',
-				text: 'ZOZONAVI',
+				text: 'ZOZOMAP',
 			},
 			{
 				id: '6977',
-				text: 'ZOZOPEOPLE',
+				text: 'ZOZONAVI',
 			},
 			{
 				id: '93bb',
-				text: 'ZOZOSNAP',
+				text: 'ZOZOSHOP',
 			},
 			{
 				id: '1d18',
-				text: 'ZOZOMAG',
+				text: 'ZOZOSEARCH',
 			},
 		],
 	},
@@ -381,11 +381,11 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: 'd4ad',
-				text: '5,660億円',
+				text: '5,744億円',
 			},
 			{
 				id: '25e8',
-				text: '6,060億円',
+				text: '6,144億円',
 			},
 			{
 				id: '9290',
@@ -393,7 +393,7 @@ export const QUESTIONS = [
 			},
 			{
 				id: '213b',
-				text: '7,660億円',
+				text: '7,474億円',
 			},
 		],
 	},
@@ -449,19 +449,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '9666',
-				text: '呼色',
+				text: '結色',
 			},
 			{
 				id: '8f29',
-				text: '織彩',
+				text: '呼色',
 			},
 			{
 				id: '11a4',
-				text: '継手',
+				text: '彩色',
 			},
 			{
 				id: '580d',
-				text: '灯環',
+				text: '和色',
 			},
 		],
 	},
@@ -505,15 +505,15 @@ export const QUESTIONS = [
 			},
 			{
 				id: '0232',
-				text: '2007年3月',
-			},
-			{
-				id: 'bf9e',
 				text: '2007年12月',
 			},
 			{
-				id: '36af',
+				id: 'bf9e',
 				text: '2009年12月',
+			},
+			{
+				id: '36af',
+				text: '2011年12月',
 			},
 		],
 	},
@@ -525,19 +525,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: 'a840',
-				text: '靴下の詰め合わせ',
+				text: 'オリジナルTシャツ',
 			},
 			{
 				id: 'fded',
-				text: 'Tシャツ',
+				text: '靴下の詰め合わせ',
 			},
 			{
 				id: '34d6',
-				text: 'トートバッグ',
+				text: 'ミニチュアZOZO箱',
 			},
 			{
 				id: 'b1c1',
-				text: 'タオルセット',
+				text: '5千円クーポン',
 			},
 		],
 	},
@@ -553,15 +553,15 @@ export const QUESTIONS = [
 			},
 			{
 				id: 'b99c',
-				text: 'ZOZOMAGAZINE',
+				text: 'ZOZOLIBRARY',
 			},
 			{
 				id: '1dc9',
-				text: 'ZOZOPRESS',
+				text: 'ZOZOCOLLE',
 			},
 			{
 				id: 'e229',
-				text: 'ZOZOBOOK',
+				text: 'ZOZOGALLERY',
 			},
 		],
 	},
@@ -597,19 +597,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '4042',
-				text: '変化を追い風に',
+				text: '人間力を最大に',
 			},
 			{
 				id: '4716',
-				text: '変化を恐れずに',
+				text: '変化を追い風に',
 			},
 			{
 				id: '9744',
-				text: '挑戦を追い風に',
+				text: '全員野球で',
 			},
 			{
 				id: '490b',
-				text: '変化を味方に',
+				text: '変化球を投げよう',
 			},
 		],
 	},
@@ -627,15 +627,15 @@ export const QUESTIONS = [
 			},
 			{
 				id: '2781',
-				text: '江口寿史',
+				text: '桑原優',
 			},
 			{
 				id: 'b634',
-				text: 'KYNE',
+				text: '松田健',
 			},
 			{
 				id: '8220',
-				text: '永井博',
+				text: 'かがみけん',
 			},
 		],
 	},
@@ -647,7 +647,7 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: 'e4d3',
-				text: '札幌',
+				text: '福岡',
 			},
 			{
 				id: '371a',
@@ -655,11 +655,11 @@ export const QUESTIONS = [
 			},
 			{
 				id: '9f1c',
-				text: '福岡',
+				text: '名古屋',
 			},
 			{
 				id: '3b17',
-				text: '広島',
+				text: '札幌',
 			},
 		],
 	},
