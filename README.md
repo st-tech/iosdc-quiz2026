@@ -10,9 +10,7 @@ pnpm install
 pnpm dev
 ```
 
-\* iosdc-quiz2026-staff リポジトリのgit submoduleとして併せて開発されています。AI開発時はstaffリポジトリ側をワークスペースディレクトリとしてください。
-
-\* `src/data/questions.public.ts` と `src/lib/{types,qr-codec,answer-key-codec,schedule}.ts` は staff リポジトリの `pnpm sync-questions` で生成されるファイルです。直接編集せず、staff 側のマスターを編集してください。
+\* `src/data/questions.public.ts` と `src/lib/{types,qr-codec,answer-key-codec,schedule}.ts` は、出題管理ツール（ローカル管理。正答・解説を含むマスターデータと sync スクリプト）で生成されるファイルです。このリポジトリ上では直接編集しないでください。
 
 ## License
 
