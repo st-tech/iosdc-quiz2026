@@ -2,426 +2,736 @@ import type { Day, PublicQuestion } from '../lib/types';
 
 export const QUESTIONS = [
 	{
-		id: 'bebc',
-		day: 1,
-		category: 'typescript',
-		title: '次のコードはエラーになる？(tsconfig strict:true)',
-		code: "const a = 1 + '1';",
-		lang: 'ts',
-		choices: [
-			{
-				id: '1adf',
-				text: '実行時エラー',
-			},
-			{
-				id: '2443',
-				text: 'コンパイルエラー',
-			},
-			{
-				id: '8d92',
-				text: 'ならない',
-			},
-		],
-	},
-	{
-		id: 'd3f3',
-		day: 2,
-		category: 'typescript',
-		title: 'X の型は？',
-		code: 'type X = 1 extends number ? true : false;',
-		lang: 'ts',
-		choices: [
-			{
-				id: 'c832',
-				text: 'true',
-			},
-			{
-				id: '4b75',
-				text: 'false',
-			},
-			{
-				id: 'c676',
-				text: 'boolean',
-			},
-		],
-	},
-	{
-		id: '610c',
-		day: 1,
-		category: 'typescript',
-		title: 'X の型は？',
-		code: 'type X = unknown extends number ? true : false;',
-		lang: 'ts',
-		choices: [
-			{
-				id: '30c1',
-				text: 'true',
-			},
-			{
-				id: 'e24c',
-				text: 'false',
-			},
-			{
-				id: '75ee',
-				text: 'boolean',
-			},
-		],
-	},
-	{
-		id: '5851',
-		day: 2,
-		category: 'typescript',
-		title: 'satisfies の正しい挙動は？',
-		code: 'const x = { a: 1, b: 2 } satisfies { a: number; b: unknown };',
-		lang: 'ts',
-		choices: [
-			{
-				id: 'd281',
-				text: 'x の型は { a: number; b: number }',
-			},
-			{
-				id: 'fd42',
-				text: 'x の型は { a: number; b: unknown }',
-			},
-			{
-				id: '61a7',
-				text: 'コンパイルエラー',
-			},
-		],
-	},
-	{
-		id: '849e',
-		day: 1,
-		category: 'typescript',
-		title: 'TypeScript 7 はなんの言語で開発されている？',
-		choices: [
-			{
-				id: '204c',
-				text: 'TypeScript',
-			},
-			{
-				id: '2e90',
-				text: 'Rust',
-			},
-			{
-				id: '5599',
-				text: 'Go',
-			},
-		],
-	},
-	{
-		id: 'b61b',
-		day: 1,
-		category: 'javascript',
-		title: '次のコードの出力は？',
-		code: 'console.log(typeof null);',
-		lang: 'js',
-		choices: [
-			{
-				id: 'c280',
-				text: '"null"',
-			},
-			{
-				id: 'd775',
-				text: '"undefined"',
-			},
-			{
-				id: '89fd',
-				text: '"object"',
-			},
-		],
-	},
-	{
-		id: '5b5c',
-		day: 2,
-		category: 'javascript',
-		title: '次のコードの結果は？',
-		code: '"use strict";\nlet str = "zozo";\nstr[0] = "s";\nconsole.log(str);',
-		lang: 'js',
-		choices: [
-			{
-				id: '2a74',
-				text: '"sozo"',
-			},
-			{
-				id: 'd0b1',
-				text: '"zozo"',
-			},
-			{
-				id: 'fe26',
-				text: 'Error',
-			},
-		],
-	},
-	{
-		id: '4940',
-		day: 2,
-		category: 'javascript',
-		title: '次のうち JavaScript (ECMAScript) の予約語は？',
-		choices: [
-			{
-				id: '7a2c',
-				text: 'string',
-			},
-			{
-				id: '4164',
-				text: 'with',
-			},
-			{
-				id: '5794',
-				text: 'using',
-			},
-		],
-	},
-	{
-		id: '57e0',
-		day: 1,
-		category: 'runtime',
-		title: '次の JavaScript ファイルを実行するとエラーになるのは？',
-		code: 'globalThis.alert("Hello, iOSDC!");\n// node ./index.mjs\n// deno run ./index.mjs\n// bun run ./index.mjs',
-		lang: 'js',
-		choices: [
-			{
-				id: '6bce',
-				text: 'Node.js',
-			},
-			{
-				id: '6560',
-				text: 'Deno',
-			},
-			{
-				id: '6593',
-				text: 'Bun',
-			},
-		],
-	},
-	{
-		id: 'e20e',
-		day: 1,
-		category: 'runtime',
-		title: '次の JavaScript ファイルを実行するとエラーになるのは？',
-		code: 'const obj = {};\nobj.__proto__.a = 1;\nconsole.log(obj.a);\n// node ./index.mjs\n// deno run ./index.mjs\n// bun run ./index.mjs',
-		lang: 'js',
-		choices: [
-			{
-				id: '1e11',
-				text: 'Node.js',
-			},
-			{
-				id: '302f',
-				text: 'Deno',
-			},
-			{
-				id: '9dd7',
-				text: 'Bun',
-			},
-		],
-	},
-	{
-		id: '3867',
-		day: 2,
-		category: 'typescript',
-		title: 'TypeScript 7 (tsgo) の開発コードネームは？',
-		choices: [
-			{
-				id: 'da8b',
-				text: 'Breeze',
-			},
-			{
-				id: 'c2ee',
-				text: 'Corsa',
-			},
-			{
-				id: 'bac7',
-				text: 'Strada',
-			},
-		],
-	},
-	{
-		id: '2ff0',
-		day: 1,
-		category: 'typescript',
-		title: 'enum を TypeScript コンパイラに渡すとどのような JavaScript コードが出力される？',
-		code: 'enum Hoge {\n\ta, b\n}\nconst a: Hoge = Hoge.a;',
-		lang: 'ts',
-		choices: [
-			{
-				id: 'e643',
-				text: 'IIFE で Hoge オブジェクトを構築する形に展開される',
-			},
-			{
-				id: '3594',
-				text: 'const enum と同等にインライン定数へ展開される',
-			},
-		],
-	},
-	{
-		id: '664e',
+		id: 'b96c',
 		day: 0,
-		category: 'typescript',
-		title: 'erasableSyntaxOnly でエラーになるのは？',
-		code: 'class Hoge {\n  private a?: number // A\n  private b() {} // B\n  constructor(private c: number) {} // C\n}',
-		lang: 'ts',
+		category: 'history',
+		title:
+			'株式会社スタートトゥデイの社名の由来となった、ハードコア・パンクバンドの名前は、〇〇ビスケッツ？',
 		choices: [
 			{
-				id: '3142',
+				id: '07d2',
+				text: 'パンダ',
+			},
+			{
+				id: 'e5ab',
+				text: 'ゴリラ',
+			},
+			{
+				id: '2ebd',
+				text: 'モンキー',
+			},
+			{
+				id: '58fc',
+				text: 'タイガー',
+			},
+		],
+	},
+	{
+		id: 'd1c5',
+		day: 0,
+		category: 'history',
+		title: '1995年の創業のきっかけとなった事業は？',
+		choices: [
+			{
+				id: 'a548',
+				text: '輸入レコード・CDのカタログ販売',
+			},
+			{
+				id: 'fa5b',
+				text: '古着の通信販売',
+			},
+			{
+				id: '8170',
+				text: '輸入雑貨のネット販売',
+			},
+			{
+				id: '4595',
+				text: '音楽イベントの企画運営',
+			},
+		],
+	},
+	{
+		id: '8a08',
+		day: 0,
+		category: 'service',
+		title:
+			'2013年、カーラ・デルヴィーニュさんを起用してオープンした、10代〜20代女性向けショッピングモールの名前は？',
+		choices: [
+			{
+				id: '2cbf',
+				text: 'LA BOO',
+			},
+			{
+				id: 'dfe2',
+				text: 'ZOZOVILLA',
+			},
+			{
+				id: 'c118',
+				text: 'ZOZOUSED',
+			},
+			{
+				id: '3e2a',
+				text: 'WEAR',
+			},
+		],
+	},
+	{
+		id: 'f8ba',
+		day: 0,
+		category: 'service',
+		title: '「ツケ払い」、現在の利用上限金額はいくら？',
+		choices: [
+			{
+				id: 'a2a7',
+				text: '20,000円',
+			},
+			{
+				id: 'e992',
+				text: '50,000円',
+			},
+			{
+				id: '1d91',
+				text: '100,000円',
+			},
+			{
+				id: 'd498',
+				text: '200,000円',
+			},
+		],
+	},
+	{
+		id: '513d',
+		day: 0,
+		category: 'ir',
+		title: '現在のZOZOTOWNアクティブ会員数は？',
+		choices: [
+			{
+				id: 'd759',
+				text: '約850万人',
+			},
+			{
+				id: '46ce',
+				text: '約1,050万人',
+			},
+			{
+				id: 'c212',
+				text: '約1,250万人',
+			},
+			{
+				id: '0cc0',
+				text: '約1,550万人',
+			},
+		],
+	},
+	{
+		id: '8f4b',
+		day: 0,
+		category: 'culture',
+		title: 'ZOZOらしさを体現するための3つの約束、「従業員の約束」とは？',
+		choices: [
+			{
+				id: '1c6c',
+				text: 'やってみよう・生み出そう・頼られよう',
+			},
+			{
+				id: '78b6',
+				text: 'やってみよう・つくりだそう・信頼されよう',
+			},
+			{
+				id: '5ad4',
+				text: '挑戦しよう・生み出そう・頼られよう',
+			},
+			{
+				id: '5e97',
+				text: 'やってみよう・生み出そう・愛されよう',
+			},
+		],
+	},
+	{
+		id: '0870',
+		day: 0,
+		category: 'creative',
+		title: '過去にZOZOTOWNのCMに登場したことのある有名人は誰？',
+		choices: [
+			{
+				id: 'b155',
+				text: '浅野忠信',
+			},
+			{
+				id: '20ba',
+				text: 'オダギリジョー',
+			},
+			{
+				id: '6cc8',
+				text: '永瀬正敏',
+			},
+			{
+				id: 'f562',
+				text: '豊川悦司',
+			},
+		],
+	},
+	{
+		id: '5f73',
+		day: 0,
+		category: 'creative',
+		title: 'ZOZOがクラブビジョン推進パートナーを務める、宮崎のサッカーチーム名は？',
+		choices: [
+			{
+				id: 'f189',
+				text: 'テゲバジャーロ',
+			},
+			{
+				id: '5df5',
+				text: 'ホンダロック',
+			},
+			{
+				id: '37f9',
+				text: 'ヴェロスクロノス',
+			},
+			{
+				id: 'b8a6',
+				text: 'アビスパ',
+			},
+		],
+	},
+	{
+		id: '82cc',
+		day: 0,
+		category: 'ios',
+		title: 'ZOZOTOWN iOSアプリで商品の検索をするときの色の絞り込み、選べる色は全部でいくつ？',
+		choices: [
+			{
+				id: '7285',
+				text: '8色',
+			},
+			{
+				id: '53c6',
+				text: '12色',
+			},
+			{
+				id: 'f344',
+				text: '15色（「その他」含む）',
+			},
+			{
+				id: 'a86a',
+				text: '20色',
+			},
+		],
+	},
+	{
+		id: 'b8c1',
+		day: 0,
+		category: 'ios',
+		title: 'ZOZOTOWNで買い物を完了したときに表示される、注文完了画面の呼び名は？',
+		image: 'ios-order-complete.png',
+		imageAlt: '注文完了画面のスクリーンショット',
+		choices: [
+			{
+				id: '7e2a',
+				text: 'THANK YOU!画面',
+			},
+			{
+				id: 'fedf',
+				text: 'ARIGATO!画面',
+			},
+			{
+				id: 'a68b',
+				text: 'KANSHA!画面',
+			},
+			{
+				id: '20e4',
+				text: 'ORDER COMPLETE画面',
+			},
+		],
+	},
+	{
+		id: 'd448',
+		day: 1,
+		category: 'history',
+		title: 'ZOZOの会社設立記念日は何月何日？',
+		choices: [
+			{
+				id: '2d3f',
+				text: '4月1日',
+			},
+			{
+				id: 'a4c9',
+				text: '5月1日',
+			},
+			{
+				id: '7e59',
+				text: '5月21日',
+			},
+			{
+				id: '581c',
+				text: '6月21日',
+			},
+		],
+	},
+	{
+		id: 'd0f8',
+		day: 1,
+		category: 'history',
+		title: 'ZOZOTOWNが開設されたのはいつ？',
+		choices: [
+			{
+				id: '0b5d',
+				text: '2003年12月15日',
+			},
+			{
+				id: 'aaab',
+				text: '2004年4月1日',
+			},
+			{
+				id: 'f3e6',
+				text: '2004年12月15日',
+			},
+			{
+				id: 'ea50',
+				text: '2005年12月15日',
+			},
+		],
+	},
+	{
+		id: 'b8a9',
+		day: 1,
+		category: 'service',
+		title: 'ZOZOTOWNアプリの、メニューの並びで正しいものはどれ？',
+		choices: [
+			{
+				id: '9578',
 				text: 'A',
+				image: 'service-menu-a.png',
+				imageAlt: 'メニュー並び順の候補A',
 			},
 			{
-				id: '947d',
+				id: '4ce4',
 				text: 'B',
+				image: 'service-menu-b.png',
+				imageAlt: 'メニュー並び順の候補B',
 			},
 			{
-				id: '9a3b',
+				id: '183c',
 				text: 'C',
+				image: 'service-menu-c.png',
+				imageAlt: 'メニュー並び順の候補C',
+			},
+			{
+				id: '52b1',
+				text: 'D',
+				image: 'service-menu-d.png',
+				imageAlt: 'メニュー並び順の候補D',
 			},
 		],
 	},
 	{
-		id: 'd383',
-		day: 2,
-		category: 'typescript',
-		title: '返り値の型が void で推論されるのは？',
-		code: "const A = () => { throw 'Oops'; };\nfunction B() { throw 'Oops'; }\nconst C = function () { throw 'Oops'; };",
-		lang: 'ts',
+		id: 'afd9',
+		day: 1,
+		category: 'service',
+		title: '「ZOZOSUIT」が発表されたのはいつ？',
 		choices: [
 			{
-				id: '5559',
+				id: '8746',
+				text: '2016年11月',
+			},
+			{
+				id: '0776',
+				text: '2017年4月',
+			},
+			{
+				id: '68ae',
+				text: '2017年11月',
+			},
+			{
+				id: 'ea2e',
+				text: '2018年1月',
+			},
+		],
+	},
+	{
+		id: 'a8bc',
+		day: 1,
+		category: 'service',
+		title: 'WEARへの移行で2015年に終了したサービスは？',
+		choices: [
+			{
+				id: '0b98',
+				text: 'ZOZONAVI',
+			},
+			{
+				id: '6977',
+				text: 'ZOZOPEOPLE',
+			},
+			{
+				id: '93bb',
+				text: 'ZOZOSNAP',
+			},
+			{
+				id: '1d18',
+				text: 'ZOZOMAG',
+			},
+		],
+	},
+	{
+		id: '66a3',
+		day: 1,
+		category: 'ir',
+		title: '2026年3月期の連結商品取扱高は？',
+		choices: [
+			{
+				id: 'd4ad',
+				text: '5,660億円',
+			},
+			{
+				id: '25e8',
+				text: '6,060億円',
+			},
+			{
+				id: '9290',
+				text: '6,660億円',
+			},
+			{
+				id: '213b',
+				text: '7,660億円',
+			},
+		],
+	},
+	{
+		id: '4403',
+		day: 1,
+		category: 'culture',
+		title: 'ZOZOの企業理念として正しいものはどれ？',
+		choices: [
+			{
+				id: 'cac7',
+				text: '世界中をカッコよく、世界中に笑顔を。',
+			},
+			{
+				id: '0383',
+				text: '世界中に笑顔を、世界中をカッコよく。',
+			},
+			{
+				id: '3fe6',
+				text: '日本中をカッコよく、世界中に笑顔を。',
+			},
+			{
+				id: 'ab8c',
+				text: '世界中をおしゃれに、世界中に笑顔を。',
+			},
+		],
+	},
+	{
+		id: '7818',
+		day: 1,
+		category: 'creative',
+		title: '「ギターマン」の正しい向きはどっち？',
+		choices: [
+			{
+				id: 'a0e6',
 				text: 'A',
+				image: 'guitar-man-a.png',
+				imageAlt: 'ギターマンの向きの候補A',
 			},
 			{
-				id: '3b1f',
+				id: '3c9b',
 				text: 'B',
-			},
-			{
-				id: '4038',
-				text: 'C',
+				image: 'guitar-man-b.png',
+				imageAlt: 'ギターマンの向きの候補B',
 			},
 		],
 	},
 	{
-		id: '8d76',
+		id: '8511',
+		day: 1,
+		category: 'creative',
+		title: 'ZOZO NEXTが始動した、日本の伝統工芸×先端技術プロジェクト名は？',
+		choices: [
+			{
+				id: '9666',
+				text: '呼色',
+			},
+			{
+				id: '8f29',
+				text: '織彩',
+			},
+			{
+				id: '11a4',
+				text: '継手',
+			},
+			{
+				id: '580d',
+				text: '灯環',
+			},
+		],
+	},
+	{
+		id: '3bb9',
+		day: 1,
+		category: 'ios',
+		title: 'ZOZOTOWN iOSアプリでフルSwiftUIで実装されている画面はどれ？',
+		choices: [
+			{
+				id: '3848',
+				text: 'ホーム',
+			},
+			{
+				id: 'e2aa',
+				text: 'お気に入り',
+			},
+			{
+				id: 'ef8a',
+				text: '探す',
+			},
+			{
+				id: '5296',
+				text: 'ランキング',
+			},
+			{
+				id: '8697',
+				text: 'マイページ',
+			},
+		],
+	},
+	{
+		id: '8b75',
 		day: 2,
-		category: 'javascript',
-		title: '次の式の結果は？',
-		code: '(NaN == NaN) === (NaN === NaN)',
-		lang: 'js',
+		category: 'history',
+		title: '東京証券取引所マザーズに上場したのはいつ？',
 		choices: [
 			{
-				id: '1f85',
-				text: 'true',
+				id: '52fa',
+				text: '2005年12月',
 			},
 			{
-				id: 'bc76',
-				text: 'false',
+				id: '0232',
+				text: '2007年3月',
 			},
 			{
-				id: '45bb',
-				text: 'Error',
+				id: 'bf9e',
+				text: '2007年12月',
+			},
+			{
+				id: '36af',
+				text: '2009年12月',
 			},
 		],
 	},
 	{
-		id: '1149',
-		day: 0,
-		category: 'javascript',
-		title: '次の式の結果は？',
-		code: 'JSON.stringify({ nan: NaN })',
-		lang: 'js',
+		id: '9851',
+		day: 2,
+		category: 'service',
+		title: 'かつてZOZOTOWNで誕生日を迎えたユーザーへ贈っていたプレゼントは？',
 		choices: [
 			{
-				id: '6e63',
-				text: '{"nan":NaN}',
+				id: 'a840',
+				text: '靴下の詰め合わせ',
 			},
 			{
-				id: '8df9',
-				text: '{"nan":null}',
+				id: 'fded',
+				text: 'Tシャツ',
 			},
 			{
-				id: '523a',
-				text: 'Error',
+				id: '34d6',
+				text: 'トートバッグ',
+			},
+			{
+				id: 'b1c1',
+				text: 'タオルセット',
 			},
 		],
 	},
 	{
-		id: '1baf',
-		day: 0,
-		category: 'runtime',
-		title: '次の TypeScript ファイルを実行するとエラーになるのは？',
-		code: 'const enum Hoge { a, b }\nconsole.log(Hoge.a);\n// node ./index.mts\n// deno run ./index.mts\n// bun run ./index.mts',
-		lang: 'ts',
+		id: 'b5de',
+		day: 2,
+		category: 'service',
+		title: '2012年創刊の、ZOZOTOWN予約販売専用雑誌の名前は？',
 		choices: [
 			{
-				id: '3c1a',
-				text: 'Node.js',
+				id: 'a2ba',
+				text: 'ZOZOCATALOG',
 			},
 			{
-				id: '7d8f',
-				text: 'Deno',
+				id: 'b99c',
+				text: 'ZOZOMAGAZINE',
 			},
 			{
-				id: '0061',
-				text: 'Bun',
+				id: '1dc9',
+				text: 'ZOZOPRESS',
+			},
+			{
+				id: 'e229',
+				text: 'ZOZOBOOK',
 			},
 		],
 	},
 	{
-		id: 'a999',
-		day: 0,
-		category: 'runtime',
-		title: 'globalThis.navigator.share() メソッドが使えるのは？',
+		id: '1301',
+		day: 2,
+		category: 'service',
+		title: '「ZOZOFIT」が展開されている国は？',
 		choices: [
 			{
-				id: '5c54',
-				text: 'iOS WebView',
+				id: 'c8b2',
+				text: 'アメリカのみ',
 			},
 			{
-				id: 'a9b4',
-				text: 'Android WebView',
+				id: 'b4cb',
+				text: 'アメリカ・カナダの2カ国',
 			},
 			{
-				id: '70b0',
-				text: 'Deno',
+				id: '180a',
+				text: 'カナダ・オーストラリア・ニュージーランド・アメリカの4カ国',
+			},
+			{
+				id: '2830',
+				text: '上記に日本を加えた5カ国',
 			},
 		],
 	},
 	{
-		id: '40d5',
-		day: 0,
-		category: 'runtime',
-		title: 'URL クラスはどの組織・仕様グループで標準化されている？',
+		id: '250e',
+		day: 2,
+		category: 'ir',
+		title: 'コーポレートサイトの澤田社長の代表メッセージは？',
 		choices: [
 			{
-				id: '8f57',
-				text: 'WHATWG',
+				id: '4042',
+				text: '変化を追い風に',
 			},
 			{
-				id: '4aa3',
-				text: 'ECMA-262',
+				id: '4716',
+				text: '変化を恐れずに',
 			},
 			{
-				id: 'f13c',
-				text: 'W3C',
+				id: '9744',
+				text: '挑戦を追い風に',
+			},
+			{
+				id: '490b',
+				text: '変化を味方に',
 			},
 		],
 	},
 	{
-		id: '2fa8',
-		day: 0,
-		category: 'runtime',
-		title: 'fetch API はどの組織・仕様グループで標準化されている？',
+		id: 'bf44',
+		day: 2,
+		category: 'creative',
+		title: 'ZOZOVILLAのキービジュアルを手がけたアーティストは？',
+		image: 'zozovilla-keyvisual.png',
+		imageAlt: 'ZOZOVILLAのキービジュアル',
 		choices: [
 			{
-				id: '82a2',
-				text: 'WHATWG',
+				id: '060b',
+				text: '長場雄',
 			},
 			{
-				id: 'e635',
-				text: 'ECMA-262',
+				id: '2781',
+				text: '江口寿史',
 			},
 			{
-				id: '4229',
-				text: 'W3C',
+				id: 'b634',
+				text: 'KYNE',
+			},
+			{
+				id: '8220',
+				text: '永井博',
+			},
+		],
+	},
+	{
+		id: '5e50',
+		day: 2,
+		category: 'creative',
+		title: '「ZOZO横丁」が開催された都市は？',
+		choices: [
+			{
+				id: 'e4d3',
+				text: '札幌',
+			},
+			{
+				id: '371a',
+				text: '仙台',
+			},
+			{
+				id: '9f1c',
+				text: '福岡',
+			},
+			{
+				id: '3b17',
+				text: '広島',
+			},
+		],
+	},
+	{
+		id: '978b',
+		day: 2,
+		category: 'ios',
+		title: 'ZOZOTOWN iOSアプリの画像読み込みに使われているOSSは？',
+		choices: [
+			{
+				id: 'd6d2',
+				text: 'Kingfisher',
+			},
+			{
+				id: 'c15e',
+				text: 'Nuke',
+			},
+			{
+				id: 'c4f7',
+				text: 'SDWebImage',
+			},
+			{
+				id: 'c09f',
+				text: 'AlamofireImage',
+			},
+		],
+	},
+	{
+		id: '93fc',
+		day: 2,
+		category: 'ios',
+		title: 'WEARのコーディネート検索で選べる「ジャンル」は全部でいくつ？',
+		choices: [
+			{
+				id: '435d',
+				text: '3',
+			},
+			{
+				id: 'c6c8',
+				text: '12',
+			},
+			{
+				id: 'd897',
+				text: '52',
+			},
+			{
+				id: '721e',
+				text: '80',
+			},
+		],
+	},
+	{
+		id: '6965',
+		day: 2,
+		category: 'ios',
+		title: 'WEAR iOSアプリにおける行数ベースで見たSwiftの割合は？',
+		choices: [
+			{
+				id: 'b2b9',
+				text: '約43%',
+			},
+			{
+				id: '65bd',
+				text: '約57%',
+			},
+			{
+				id: 'fe87',
+				text: '約92%',
+			},
+			{
+				id: '1de3',
+				text: '約100%',
 			},
 		],
 	},

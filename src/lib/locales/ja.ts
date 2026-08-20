@@ -2,9 +2,8 @@ import type { Messages } from '../i18n';
 
 export const ja: Messages = {
 	quizPanelAriaLabel: 'クイズ画面',
-	introTitle: 'TypeScriptクイズに挑戦！',
-	introLead:
-		'テックリードお手製、社内でも実施しているTypeScriptクイズの特別版。何問正解できるかな？',
+	introTitle: 'ZOZOクイズに挑戦！',
+	introLead: 'ZOZOのサービスや歴史、iOSアプリ開発にまつわるクイズです。何問正解できるかな？',
 	statusAriaLabel: '回答状況',
 	startButtonAriaLabel: 'クイズを開始',
 	resumeButtonAriaLabel: '未回答の問題から再開',
@@ -30,15 +29,13 @@ export const ja: Messages = {
 	buildShareText: (day, correctCount, total, isPerfect) => {
 		const hashtags = '#iosdc #zozo_engineer';
 		if (correctCount < 5) {
-			return [
-				'iOSDC Japan 2026のZOZOブースでTypeScriptクイズにチャレンジしました！',
-				'',
-				hashtags,
-			].join('\n');
+			return ['iOSDC Japan 2026のZOZOブースでZOZOクイズにチャレンジしました！', '', hashtags].join(
+				'\n'
+			);
 		}
 		const score = isPerfect ? `${total}問全問正解！🎉` : `${correctCount}問正解！🙌`;
 		return [
-			'iOSDC Japan 2026のZOZOブースでTypeScriptクイズに挑戦しました！',
+			'iOSDC Japan 2026のZOZOブースでZOZOクイズに挑戦しました！',
 			`Day${day}の結果は...${score}`,
 			'',
 			hashtags,

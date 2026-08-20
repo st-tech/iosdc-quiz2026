@@ -2,9 +2,9 @@ import type { Messages } from '../i18n';
 
 export const en: Messages = {
 	quizPanelAriaLabel: 'Quiz screen',
-	introTitle: 'Take on the TypeScript quiz!',
+	introTitle: 'Take on the ZOZO quiz!',
 	introLead:
-		'A special edition of the TypeScript quiz made by our tech leads. How many can you get right?',
+		"A quiz about ZOZO's services, history, and iOS app development. How many can you get right?",
 	statusAriaLabel: 'Answer status',
 	startButtonAriaLabel: 'Start quiz',
 	resumeButtonAriaLabel: 'Resume from unanswered question',
@@ -31,14 +31,14 @@ export const en: Messages = {
 		const hashtags = '#iosdc #zozo_engineer';
 		if (correctCount < 5) {
 			return [
-				'I gave the TypeScript quiz at the ZOZO booth at iOSDC Japan 2026 a shot!',
+				'I gave the ZOZO quiz at the ZOZO booth at iOSDC Japan 2026 a shot!',
 				'',
 				hashtags,
 			].join('\n');
 		}
 		const score = isPerfect ? `All ${total} correct! 🎉` : `${correctCount} correct! 🙌`;
 		return [
-			'I took the TypeScript quiz at the ZOZO booth at iOSDC Japan 2026!',
+			'I took the ZOZO quiz at the ZOZO booth at iOSDC Japan 2026!',
 			`Day ${day} result: ${score}`,
 			'',
 			hashtags,

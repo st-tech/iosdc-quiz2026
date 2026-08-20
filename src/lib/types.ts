@@ -1,6 +1,6 @@
 export type Day = 0 | 1 | 2;
 
-export type Category = 'typescript' | 'javascript' | 'runtime';
+export type Category = 'history' | 'service' | 'ir' | 'culture' | 'creative' | 'ios';
 
 export interface AnswerChoice {
 	id: string;
