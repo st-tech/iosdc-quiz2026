@@ -1,10 +1,10 @@
 import type { Day } from './types';
 
-// TODO: iOSDC Japan 2026 の開催日程確定後に実際の日付へ更新する (JST)
+// iOSDC Japan 2026 開催日程 (JST): day0 = 9/11(金), day1 = 9/12(土), day2 = 9/13(日)
 export const DAY_SCHEDULE: Record<string, Day> = {
-	'2026-09-17': 0,
-	'2026-09-18': 1,
-	'2026-09-19': 2,
+	'2026-09-11': 0,
+	'2026-09-12': 1,
+	'2026-09-13': 2,
 };
 
 // 開催期間外 (開発・検証時など) に使う day
