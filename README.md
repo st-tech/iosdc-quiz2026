@@ -10,7 +10,7 @@ pnpm install
 pnpm dev
 ```
 
-\* `src/data/questions.public.ts` と `src/lib/{types,qr-codec,answer-key-codec,schedule}.ts` は、出題管理ツール（ローカル管理。正答・解説を含むマスターデータと sync スクリプト）で生成されるファイルです。このリポジトリ上では直接編集しないでください。
+\* `src/data/questions.public.ts`、`src/lib/{types,qr-codec,answer-key-codec,schedule}.ts`、`public/questions/` の画像は、出題管理ツール（ローカル管理。正答・解説を含むマスターデータと sync スクリプト）で生成されるファイルです。このリポジトリ上では直接編集しないでください。
 
 ## License
 

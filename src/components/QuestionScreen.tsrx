@@ -1,5 +1,6 @@
 import { categoryLabel } from '../lib/category';
 import { t } from '../lib/i18n';
+import { questionImageUrl } from '../lib/question-image';
 import type { PublicQuestion } from '../lib/types';
 import { CodeBlock } from './CodeBlock.tsrx';
 
@@ -27,6 +28,13 @@ export component QuestionScreen(&{
 			{`question ${index + 1} / ${total} / ${categoryLabel(question.category)}`}
 		</p>
 		<h2 id={questionTitleId(question.id)}>{question.title}</h2>
+		if (question.image) {
+			<img
+				class="question-image"
+				src={questionImageUrl(question.image)}
+				alt={question.imageAlt ?? ''}
+			/>
+		}
 		if (question.code && question.lang) {
 			<CodeBlock code={question.code} lang={question.lang} />
 		}
@@ -42,7 +50,16 @@ export component QuestionScreen(&{
 						onInput={() => onSelect(choice.id)}
 					/>
 					<span aria-hidden="true">{String.fromCharCode(65 + choiceIndex)}</span>
-					<strong>{choice.text}</strong>
+					<div class="choice-body">
+						<strong>{choice.text}</strong>
+						if (choice.image) {
+							<img
+								class="choice-image"
+								src={questionImageUrl(choice.image)}
+								alt={choice.imageAlt ?? ''}
+							/>
+						}
+					</div>
 				</label>
 			}
 		</fieldset>
@@ -76,6 +93,27 @@ export component QuestionScreen(&{
 			overflow-wrap: anywhere;
 			word-break: break-word;
 			min-width: 0;
+		}
+
+		.question-image {
+			display: block;
+			max-width: 100%;
+			border: 1px solid #34404d;
+			border-radius: 4px;
+		}
+
+		.choice-body {
+			display: grid;
+			gap: 0.45rem;
+			min-width: 0;
+		}
+
+		.choice-image {
+			display: block;
+			width: 100%;
+			max-width: 16rem;
+			border: 1px solid #34404d;
+			border-radius: 4px;
 		}
 
 		.choices {

@@ -2,6 +2,7 @@ import { track } from 'ripple';
 
 import { categoryLabel } from '../lib/category';
 import { formatDate, t } from '../lib/i18n';
+import { questionImageUrl } from '../lib/question-image';
 import type {
 	AnswerEntry,
 	AnswerKeyEntry,
@@ -63,6 +64,13 @@ export component AnswerResultScreen(&{
 						</div>
 						<h3 class="title">{question.title}</h3>
 					</div>
+					if (question.image) {
+						<img
+							class="question-image"
+							src={questionImageUrl(question.image)}
+							alt={question.imageAlt ?? ''}
+						/>
+					}
 					if (question.code && question.lang) {
 						<details class="code-toggle">
 							<summary>
@@ -125,6 +133,13 @@ export component AnswerResultScreen(&{
 	</section>
 
 	<style>
+		.question-image {
+			display: block;
+			max-width: 100%;
+			border: 1px solid #34404d;
+			border-radius: 4px;
+		}
+
 		.result {
 			display: grid;
 			gap: 0.9rem;

@@ -5,6 +5,9 @@ export type Category = 'typescript' | 'javascript' | 'runtime';
 export interface AnswerChoice {
 	id: string;
 	text: string;
+	// question-images/ 配下のファイル名 (来場者アプリでは public/questions/ から配信)
+	image?: string;
+	imageAlt?: string;
 }
 
 export interface PublicQuestion {
@@ -12,6 +15,9 @@ export interface PublicQuestion {
 	day: Day;
 	category: Category;
 	title: string;
+	// question-images/ 配下のファイル名 (来場者アプリでは public/questions/ から配信)
+	image?: string;
+	imageAlt?: string;
 	code?: string;
 	lang?: 'ts' | 'js';
 	choices: AnswerChoice[];
