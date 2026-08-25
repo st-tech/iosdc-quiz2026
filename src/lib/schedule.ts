@@ -11,6 +11,13 @@ export const DAY_SCHEDULE: Record<string, Day> = {
 export const FALLBACK_DAY: Day = 0;
 
 export function readDay(now = new Date()): Day {
+	// localhost での動作確認用: URL に ?day=0|1|2 を付けると強制的に切り替えられる
+	if (typeof location !== 'undefined' && location.hostname === 'localhost') {
+		const param = new URLSearchParams(location.search).get('day');
+		if (param === '0' || param === '1' || param === '2') {
+			return Number(param) as Day;
+		}
+	}
 	return DAY_SCHEDULE[getJstDateKey(now)] ?? FALLBACK_DAY;
 }
 

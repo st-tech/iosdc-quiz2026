@@ -224,7 +224,7 @@ export const QUESTIONS = [
 		day: 0,
 		category: 'ios',
 		title: 'ZOZOTOWNで買い物を完了したときに表示される、注文完了画面の呼び名は？',
-		image: 'ios-order-complete.png',
+		image: 'order_complete.png',
 		imageAlt: '注文完了画面のスクリーンショット',
 		choices: [
 			{
@@ -302,25 +302,25 @@ export const QUESTIONS = [
 			{
 				id: '9578',
 				text: 'A',
-				image: 'service-menu-a.png',
+				image: 'tab_bar_A.png',
 				imageAlt: 'メニュー並び順の候補A',
 			},
 			{
 				id: '4ce4',
 				text: 'B',
-				image: 'service-menu-b.png',
+				image: 'tab_bar_B.png',
 				imageAlt: 'メニュー並び順の候補B',
 			},
 			{
 				id: '183c',
 				text: 'C',
-				image: 'service-menu-c.png',
+				image: 'tab_bar_C.png',
 				imageAlt: 'メニュー並び順の候補C',
 			},
 			{
 				id: '52b1',
 				text: 'D',
-				image: 'service-menu-d.png',
+				image: 'tab_bar_D.png',
 				imageAlt: 'メニュー並び順の候補D',
 			},
 		],
@@ -425,18 +425,18 @@ export const QUESTIONS = [
 		id: '7818',
 		day: 1,
 		category: 'creative',
-		title: '「ギターマン」の正しい向きはどっち？',
+		title: 'ZOZOTOWNのWebサイトのローディングで使われている「ギターマン」。正しい向きはどっち？',
 		choices: [
 			{
 				id: 'a0e6',
 				text: 'A',
-				image: 'guitar-man-a.png',
+				image: 'guitar_man_a.png',
 				imageAlt: 'ギターマンの向きの候補A',
 			},
 			{
 				id: '3c9b',
 				text: 'B',
-				image: 'guitar-man-b.png',
+				image: 'guitar_man_b.png',
 				imageAlt: 'ギターマンの向きの候補B',
 			},
 		],
@@ -569,7 +569,8 @@ export const QUESTIONS = [
 		id: '1301',
 		day: 2,
 		category: 'service',
-		title: '「ZOZOFIT」が展開されている国は？',
+		title:
+			'フィットネス・ダイエット・ボディメイクなどのさまざまな目的に対して、ワークアウトの進捗をサポートするボディーマネジメントサービス「ZOZOFIT」が展開されている国は？',
 		choices: [
 			{
 				id: 'c8b2',
@@ -594,6 +595,8 @@ export const QUESTIONS = [
 		day: 2,
 		category: 'ir',
 		title: 'コーポレートサイトの澤田社長の代表メッセージは？',
+		image: 'president_message.jpg',
+		imageAlt: '澤田社長の代表メッセージ',
 		choices: [
 			{
 				id: '4042',
@@ -617,8 +620,9 @@ export const QUESTIONS = [
 		id: 'bf44',
 		day: 2,
 		category: 'creative',
-		title: 'ZOZOVILLAのキービジュアルを手がけたアーティストは？',
-		image: 'zozovilla-keyvisual.png',
+		title:
+			'ラグジュアリーブランドやデザイナーズブランドを取り扱うデザイナーズゾン「ZOZOVILLA」のキービジュアルを手がけたアーティストは？',
+		image: 'zozovilla_keyvisual.png',
 		imageAlt: 'ZOZOVILLAのキービジュアル',
 		choices: [
 			{
@@ -643,7 +647,8 @@ export const QUESTIONS = [
 		id: '5e50',
 		day: 2,
 		category: 'creative',
-		title: '「ZOZO横丁」が開催された都市は？',
+		title:
+			'提灯と看板が彩る横丁風の演出を施し、「よい服。よい酒。よい出会い。」をテーマに、飲みながらファッションを楽しめる空間「ZOZO横丁」が開催された都市は？',
 		choices: [
 			{
 				id: 'e4d3',
