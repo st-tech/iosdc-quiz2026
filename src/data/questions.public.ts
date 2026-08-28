@@ -6,7 +6,7 @@ export const QUESTIONS = [
 		day: 0,
 		category: 'history',
 		title:
-			'株式会社スタートトゥデイの社名の由来となった、ハードコア・パンクバンドの名前は、〇〇ビスケッツ？',
+			'株式会社スタート・トゥデイの社名の由来となった、ハードコア・パンクバンドの名前は、〇〇ビスケッツ？',
 		choices: [
 			{
 				id: '07d2',
@@ -30,7 +30,7 @@ export const QUESTIONS = [
 		id: 'd1c5',
 		day: 0,
 		category: 'history',
-		title: '1995年の創業のきっかけとなった事業は？',
+		title: '1995年、ZOZOの前身であるスタート・トゥデイの創業のきっかけとなった事業は？',
 		choices: [
 			{
 				id: 'a548',
@@ -79,7 +79,8 @@ export const QUESTIONS = [
 		id: 'f8ba',
 		day: 0,
 		category: 'service',
-		title: '「ツケ払い」、現在の利用上限金額はいくら？',
+		title:
+			'商品到着後に代金をお支払いいただける後払いの支払いサービス「ツケ払い」、現在の利用上限金額はいくら？',
 		choices: [
 			{
 				id: 'a2a7',
@@ -124,26 +125,22 @@ export const QUESTIONS = [
 		],
 	},
 	{
-		id: '8f4b',
+		id: '1fd1',
 		day: 0,
 		category: 'culture',
-		title: 'ZOZOらしさを体現するための3つの約束、「従業員の約束」とは？',
+		title: '2012年5月に導入された独自制度「ろくじろう」とは？',
 		choices: [
 			{
-				id: '1c6c',
-				text: 'ソウゾウしよう・生み出そう・頼られよう',
+				id: 'dcda',
+				text: '6ヶ月育休制度',
 			},
 			{
-				id: '78b6',
-				text: 'やってみよう・助け合おう・頼られよう',
+				id: '6dfc',
+				text: '6日連続休暇制度',
 			},
 			{
-				id: '5ad4',
-				text: 'やってみよう・生み出そう・頼られよう',
-			},
-			{
-				id: '5e97',
-				text: 'ソウゾウしよう・助け合おう・信じよう',
+				id: '3d2a',
+				text: '6時間労働制度',
 			},
 		],
 	},
@@ -199,7 +196,8 @@ export const QUESTIONS = [
 		id: '82cc',
 		day: 0,
 		category: 'ios',
-		title: 'ZOZOTOWN iOSアプリで商品の検索をするときの色の絞り込み、選べる色は全部でいくつ？',
+		title:
+			'ZOZOTOWN iOSアプリで商品の検索をするときの色の絞り込み、選べる色（「その他」を含む）は全部でいくつ？',
 		choices: [
 			{
 				id: '7285',
@@ -211,7 +209,7 @@ export const QUESTIONS = [
 			},
 			{
 				id: 'f344',
-				text: '15色（「その他」含む）',
+				text: '15色',
 			},
 			{
 				id: 'a86a',
@@ -329,7 +327,8 @@ export const QUESTIONS = [
 		id: 'afd9',
 		day: 1,
 		category: 'service',
-		title: '「ZOZOSUIT」が発表されたのはいつ？',
+		title:
+			'全体に施されたドットマーカーをスマートフォンのカメラで360度撮影することで、高精度な計測を可能とした採寸用ボディースーツ「ZOZOSUIT」が発表されたのはいつ？',
 		choices: [
 			{
 				id: '8746',
