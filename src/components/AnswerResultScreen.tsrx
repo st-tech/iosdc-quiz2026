@@ -1,6 +1,7 @@
-import { track } from 'ripple';
+import { effect, track } from 'ripple';
 
 import { categoryLabel } from '../lib/category';
+import { decryptExplanations } from '../lib/explanations';
 import { formatDate, t } from '../lib/i18n';
 import { questionImageUrl } from '../lib/question-image';
 import type {
@@ -31,6 +32,17 @@ export component AnswerResultScreen(&{
 	const isPerfect = total > 0 && correctCount === total;
 	const shareText = buildShareText(day, correctCount, total, isPerfect);
 	let &[copyStatus] = track<'idle' | 'copied' | 'error'>('idle');
+	let &[explanations] = track<Record<string, string> | null>(null);
+
+	effect(() => {
+		let cancelled = false;
+		void decryptExplanations(day, answerKey).then((value) => {
+			if (!cancelled) explanations = value;
+		});
+		return () => {
+			cancelled = true;
+		};
+	});
 
 	const copyShare = async () => {
 		const payload = shareText;
@@ -91,6 +103,9 @@ export component AnswerResultScreen(&{
 							<dd>{correctText}</dd>
 						</div>
 					</dl>
+					if (explanations && explanations[question.id]) {
+						<p class="explanation">{explanations[question.id]}</p>
+					}
 				</li>
 			}
 		</ol>
@@ -133,6 +148,16 @@ export component AnswerResultScreen(&{
 	</section>
 
 	<style>
+		.explanation {
+			margin: 0;
+			padding: 0.55rem 0.65rem;
+			border-left: 3px solid #8bd49c;
+			background: #10161d;
+			color: #b9c4cd;
+			font-size: 0.82rem;
+			line-height: 1.6;
+		}
+
 		.question-image {
 			display: block;
 			max-width: 100%;

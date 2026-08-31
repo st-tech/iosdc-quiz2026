@@ -18,7 +18,7 @@ export const en: Messages = {
 		'Scan the QR code shown by the staff with this device to check whether your answers are correct.',
 	answerResultListAriaLabel: 'Answer results',
 	scoreAriaLabel: (correct, total) => `Correct answers: ${correct} / ${total}`,
-	resultMeta: (date) => `${date} / Explanations will be published later.`,
+	resultMeta: (date) => date,
 	codeExpandHint: 'Tap to expand code',
 	codeCollapseHint: 'Tap to collapse code',
 	shareLabel: 'Share your result',

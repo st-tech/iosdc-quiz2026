@@ -17,7 +17,7 @@ export const ja: Messages = {
 		'「Start camera」からスタッフが提示するQRコードをこの端末で読み取ると、あなたの回答の正誤を確認できます。',
 	answerResultListAriaLabel: '正誤結果',
 	scoreAriaLabel: (correct, total) => `正解数 ${correct} / ${total}`,
-	resultMeta: (date) => `${date} / 詳しい説明は後日公開予定です。`,
+	resultMeta: (date) => date,
 	codeExpandHint: 'タップでコードを展開',
 	codeCollapseHint: 'タップでコードを閉じる',
 	shareLabel: '結果をシェア',
