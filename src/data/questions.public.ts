@@ -51,52 +51,50 @@ export const QUESTIONS = [
 		],
 	},
 	{
-		id: '8a08',
+		id: 'ff51',
 		day: 0,
 		category: 'service',
-		title:
-			'2013年、カーラ・デルヴィーニュさんを起用してオープンした、10代〜20代女性向けショッピングモールの名前は？',
+		title: '新卒入社スタッフが中心となって立ち上げた、今でも続いているZOZOTOWNのサービスは？',
 		choices: [
 			{
-				id: '2cbf',
-				text: 'LE MARIA',
+				id: '483b',
+				text: '店舗在庫連携',
 			},
 			{
-				id: 'dfe2',
-				text: 'LA BOO',
+				id: 'cf76',
+				text: 'ZOZOトラック',
 			},
 			{
-				id: 'c118',
-				text: 'LA OHANA',
+				id: 'fb53',
+				text: 'ギフトラッピング',
 			},
 			{
-				id: '3e2a',
-				text: 'LA GOON',
+				id: 'dbe5',
+				text: '買い替え割',
 			},
 		],
 	},
 	{
-		id: 'f8ba',
+		id: '6afa',
 		day: 0,
-		category: 'service',
-		title:
-			'商品到着後に代金をお支払いいただける後払いの支払いサービス「ツケ払い」、現在の利用上限金額はいくら？',
+		category: 'creative',
+		title: 'WEAR公式キャラクター「チーコ」の名前の由来は？',
 		choices: [
 			{
-				id: 'a2a7',
-				text: '20,000円',
+				id: '44ad',
+				text: '「コーデをチェックする子」で「チーコ」',
 			},
 			{
-				id: 'e992',
-				text: '54,000円',
+				id: '53e3',
+				text: '「小さい子」で「チーコ」',
 			},
 			{
-				id: '1d91',
-				text: '100,000円',
+				id: '1d15',
+				text: '「遅刻グセがある子」で「チーコ」',
 			},
 			{
-				id: 'd498',
-				text: '500,000円',
+				id: 'fc91',
+				text: '生みの親の名前が「チカコ」',
 			},
 		],
 	},
@@ -145,26 +143,26 @@ export const QUESTIONS = [
 		],
 	},
 	{
-		id: '0870',
+		id: '30e4',
 		day: 0,
 		category: 'creative',
-		title: '過去にZOZOTOWNのCMに登場したことのある有名人は誰？',
+		title: '箱猫マックスの弟の名前は？',
 		choices: [
 			{
-				id: 'b155',
-				text: '木梨憲武',
+				id: '612b',
+				text: 'たかし',
 			},
 			{
-				id: '20ba',
-				text: '浅野忠信',
+				id: '7728',
+				text: 'ひろし',
 			},
 			{
-				id: '6cc8',
-				text: '明石家さんま',
+				id: 'be99',
+				text: 'あつし',
 			},
 			{
-				id: 'f562',
-				text: '江頭2:50',
+				id: 'c04e',
+				text: 'つよし',
 			},
 		],
 	},
@@ -275,19 +273,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '0b5d',
-				text: '2000年12月15日',
+				text: '2000年',
 			},
 			{
 				id: 'aaab',
-				text: '2002年12月15日',
+				text: '2002年',
 			},
 			{
 				id: 'f3e6',
-				text: '2004年12月15日',
+				text: '2004年',
 			},
 			{
 				id: 'ea50',
-				text: '2006年12月15日',
+				text: '2006年',
 			},
 		],
 	},
@@ -328,7 +326,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'service',
 		title:
-			'全体に施されたドットマーカーをスマートフォンのカメラで360度撮影することで、高精度な計測を可能とした採寸用ボディースーツ「ZOZOSUIT」が発表されたのはいつ？',
+			'全体に施されたドットマーカーをスマートフォンのカメラで360度撮影することで、高精度な計測を可能とした採寸用ボディースーツ旧ZOZOSUITが発表されたのはいつ？',
 		choices: [
 			{
 				id: '8746',
@@ -616,29 +614,26 @@ export const QUESTIONS = [
 		],
 	},
 	{
-		id: 'bf44',
+		id: 'd745',
 		day: 2,
-		category: 'creative',
-		title:
-			'ラグジュアリーブランドやデザイナーズブランドを取り扱うデザイナーズゾン「ZOZOVILLA」のキービジュアルを手がけたアーティストは？',
-		image: 'zozovilla_keyvisual.png',
-		imageAlt: 'ZOZOVILLAのキービジュアル',
+		category: 'culture',
+		title: 'ZOZO内の部活で実際に存在するものはどれ？',
 		choices: [
 			{
-				id: '060b',
-				text: '長場雄',
+				id: 'aa1e',
+				text: '映画部',
 			},
 			{
-				id: '2781',
-				text: '桑原優',
+				id: '1a00',
+				text: 'ポケモンカード部',
 			},
 			{
-				id: 'b634',
-				text: '松田健',
+				id: 'ba98',
+				text: '盆栽部',
 			},
 			{
-				id: '8220',
-				text: 'かがみけん',
+				id: 'cab6',
+				text: 'モルック部',
 			},
 		],
 	},
@@ -699,19 +694,19 @@ export const QUESTIONS = [
 		choices: [
 			{
 				id: '435d',
-				text: '3',
+				text: '5',
 			},
 			{
 				id: 'c6c8',
-				text: '12',
+				text: '7',
 			},
 			{
 				id: 'd897',
-				text: '52',
+				text: '12',
 			},
 			{
 				id: '721e',
-				text: '80',
+				text: '50',
 			},
 		],
 	},
