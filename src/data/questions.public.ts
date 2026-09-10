@@ -79,6 +79,8 @@ export const QUESTIONS = [
 		day: 0,
 		category: 'creative',
 		title: 'WEAR公式キャラクター「チーコ」の名前の由来は？',
+		image: 'chico.png',
+		imageAlt: 'チーコのイラスト',
 		choices: [
 			{
 				id: '44ad',
@@ -147,6 +149,8 @@ export const QUESTIONS = [
 		day: 0,
 		category: 'creative',
 		title: '箱猫マックスの弟の名前は？',
+		image: 'max_brother.png',
+		imageAlt: '箱猫マックスの弟のイラスト',
 		choices: [
 			{
 				id: '612b',
