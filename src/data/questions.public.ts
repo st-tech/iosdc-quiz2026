@@ -505,10 +505,36 @@ export const QUESTIONS = [
 		],
 	},
 	{
+		id: '93fc',
+		day: 2,
+		category: 'ios',
+		title: 'WEARのコーディネート検索で選べる「ジャンル」は全部でいくつ？',
+		hint: 'WEARアプリをダウンロードして確認しよう！',
+		choices: [
+			{
+				id: '435d',
+				text: '5',
+			},
+			{
+				id: 'c6c8',
+				text: '7',
+			},
+			{
+				id: 'd897',
+				text: '12',
+			},
+			{
+				id: '721e',
+				text: '50',
+			},
+		],
+	},
+	{
 		id: '8b75',
 		day: 2,
 		category: 'history',
 		title: '東京証券取引所マザーズに上場したのはいつ？',
+		hint: 'ZOZOの会社沿革（ https://corp.zozo.com/about/history/ ）を見ると・・・？',
 		choices: [
 			{
 				id: '52fa',
@@ -529,34 +555,11 @@ export const QUESTIONS = [
 		],
 	},
 	{
-		id: '9851',
-		day: 2,
-		category: 'service',
-		title: 'かつてZOZOTOWNで誕生日を迎えたユーザーへ贈っていたプレゼントは？',
-		choices: [
-			{
-				id: 'a840',
-				text: 'オリジナルTシャツ',
-			},
-			{
-				id: 'fded',
-				text: '靴下の詰め合わせ',
-			},
-			{
-				id: '34d6',
-				text: 'ミニチュアZOZO箱',
-			},
-			{
-				id: 'b1c1',
-				text: '5千円クーポン',
-			},
-		],
-	},
-	{
 		id: 'b5de',
 		day: 2,
 		category: 'service',
 		title: '2012年創刊の、ZOZOTOWN予約販売専用雑誌の名前は？',
+		hint: 'このニュースに答えが隠されているかも・・・？ https://corp.zozo.com/news/20220825-madebyzozo/',
 		choices: [
 			{
 				id: 'a2ba',
@@ -582,6 +585,7 @@ export const QUESTIONS = [
 		category: 'service',
 		title:
 			'フィットネス・ダイエット・ボディメイクなどのさまざまな目的に対して、ワークアウトの進捗をサポートするボディーマネジメントサービス「ZOZOFIT」が展開されている国は？',
+		hint: 'ZOZOFITのインスタグラムアカウント（ https://www.instagram.com/myzozofit/ ）をみると・・・？',
 		choices: [
 			{
 				id: 'c8b2',
@@ -606,6 +610,7 @@ export const QUESTIONS = [
 		day: 2,
 		category: 'ir',
 		title: 'コーポレートサイトの澤田社長の代表メッセージは？',
+		hint: 'ZOZOの社長メッセージ（ https://corp.zozo.com/about/message/ ）をみると・・・？',
 		image: 'president_message.jpg',
 		imageAlt: '澤田社長の代表メッセージ',
 		choices: [
@@ -632,6 +637,7 @@ export const QUESTIONS = [
 		day: 2,
 		category: 'culture',
 		title: 'ZOZO内の部活で実際に存在するものはどれ？',
+		hint: '最近流行りの・・・？',
 		choices: [
 			{
 				id: 'aa1e',
@@ -657,6 +663,7 @@ export const QUESTIONS = [
 		category: 'creative',
 		title:
 			'提灯と看板が彩る横丁風の演出を施し、「よい服。よい酒。よい出会い。」をテーマに、飲みながらファッションを楽しめる空間「ZOZO横丁」が開催された都市は？',
+		hint: 'ZOZO横丁のニュース記事（ https://corp.zozo.com/news/20250617-007145/ ）を見ると・・・？',
 		choices: [
 			{
 				id: 'e4d3',
@@ -681,6 +688,7 @@ export const QUESTIONS = [
 		day: 2,
 		category: 'ios',
 		title: 'ZOZOTOWN iOSアプリの画像読み込みに使われているOSSは？',
+		hint: 'ZOZOTOWN iOSアプリのライセンス情報を見ると・・・？（Androidの方はごめんなさい！）',
 		choices: [
 			{
 				id: 'd6d2',
@@ -701,34 +709,11 @@ export const QUESTIONS = [
 		],
 	},
 	{
-		id: '93fc',
-		day: 2,
-		category: 'ios',
-		title: 'WEARのコーディネート検索で選べる「ジャンル」は全部でいくつ？',
-		choices: [
-			{
-				id: '435d',
-				text: '5',
-			},
-			{
-				id: 'c6c8',
-				text: '7',
-			},
-			{
-				id: 'd897',
-				text: '12',
-			},
-			{
-				id: '721e',
-				text: '50',
-			},
-		],
-	},
-	{
 		id: '6965',
 		day: 2,
 		category: 'ios',
 		title: 'WEAR iOSアプリにおける行数ベースで見たSwiftの割合は？',
+		hint: '難問！',
 		choices: [
 			{
 				id: 'b2b9',
@@ -745,6 +730,31 @@ export const QUESTIONS = [
 			{
 				id: '1de3',
 				text: '約100%',
+			},
+		],
+	},
+	{
+		id: '9851',
+		day: 2,
+		category: 'service',
+		title: 'かつてZOZOTOWNで誕生日を迎えたユーザーへ贈っていたプレゼントは？',
+		hint: '難問！',
+		choices: [
+			{
+				id: 'a840',
+				text: 'オリジナルTシャツ',
+			},
+			{
+				id: 'fded',
+				text: '靴下の詰め合わせ',
+			},
+			{
+				id: '34d6',
+				text: 'ミニチュアZOZO箱',
+			},
+			{
+				id: 'b1c1',
+				text: '5千円クーポン',
 			},
 		],
 	},
