@@ -405,7 +405,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'creative',
 		title: 'ZOZO NEXTが始動した、日本の伝統工芸×先端技術プロジェクト名は？',
-		hint: 'ZOZO NEXTのページ（ https://zozonext.com/ ）から探してみよう！',
+		hint: 'ZOZO NEXTのページ（ https://yobiiro.zozo.com/ ）から探してみよう！',
 		choices: [
 			{
 				id: '9666',
