@@ -58,6 +58,42 @@ export component AnswerResultScreen(&{
 	};
 
 	<section class="result" aria-labelledby="answer-result-title">
+		<div class="summary">
+			<div class="summary-head">
+				<h1>{'Answer result'}</h1>
+				<h2
+					id="answer-result-title"
+					class="score-text"
+					aria-label={t.scoreAriaLabel(correctCount, total)}
+				>
+					{`${correctCount} / ${total} correct${isPerfect ? '!!' : ''}`}
+				</h2>
+				<p class="meta">{t.resultMeta(formatDate(checkedAt))}</p>
+			</div>
+		</div>
+
+		<div class="share" aria-label={t.shareLabel}>
+			<h3 class="share-cta">{t.shareCta}</h3>
+			<pre class="share-preview" aria-label="シェアされる文章のプレビュー">{shareText}</pre>
+			<div class="share-buttons">
+				<a
+					class="share-btn x primary"
+					href={buildXUrl(shareText)}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					{t.sharePostButton}
+				</a>
+				<button type="button" class="share-btn copy" onClick={() => copyShare()}>
+					{copyStatus === 'copied'
+						? t.shareCopiedButton
+						: copyStatus === 'error'
+							? t.shareCopyFailedButton
+							: t.shareCopyButton}
+				</button>
+			</div>
+		</div>
+
 		<ol class="answers" aria-label={t.answerResultListAriaLabel}>
 			for (const question of questions; index index; key question.id) {
 				const result = results.find((entry) => entry.questionId === question.id);
@@ -109,42 +145,6 @@ export component AnswerResultScreen(&{
 				</li>
 			}
 		</ol>
-
-		<div class="summary">
-			<div class="summary-head">
-				<h1>{'Answer result'}</h1>
-				<h2
-					id="answer-result-title"
-					class="score-text"
-					aria-label={t.scoreAriaLabel(correctCount, total)}
-				>
-					{`${correctCount} / ${total} correct${isPerfect ? '!!' : ''}`}
-				</h2>
-				<p class="meta">{t.resultMeta(formatDate(checkedAt))}</p>
-			</div>
-		</div>
-
-		<div class="share" aria-label={t.shareLabel}>
-			<h3 class="share-cta">{t.shareCta}</h3>
-			<pre class="share-preview" aria-label="シェアされる文章のプレビュー">{shareText}</pre>
-			<div class="share-buttons">
-				<a
-					class="share-btn x primary"
-					href={buildXUrl(shareText)}
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					{t.sharePostButton}
-				</a>
-				<button type="button" class="share-btn copy" onClick={() => copyShare()}>
-					{copyStatus === 'copied'
-						? t.shareCopiedButton
-						: copyStatus === 'error'
-							? t.shareCopyFailedButton
-							: t.shareCopyButton}
-				</button>
-			</div>
-		</div>
 	</section>
 
 	<style>
