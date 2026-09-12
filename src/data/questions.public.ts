@@ -246,58 +246,11 @@ export const QUESTIONS = [
 		],
 	},
 	{
-		id: 'd448',
-		day: 1,
-		category: 'history',
-		title: 'ZOZOの会社設立記念日は何月何日？',
-		choices: [
-			{
-				id: '2d3f',
-				text: '12月15日',
-			},
-			{
-				id: 'a4c9',
-				text: '5月21日',
-			},
-			{
-				id: '7e59',
-				text: '12月11日',
-			},
-			{
-				id: '581c',
-				text: '2月15日',
-			},
-		],
-	},
-	{
-		id: 'd0f8',
-		day: 1,
-		category: 'history',
-		title: 'ZOZOTOWNが開設されたのはいつ？',
-		choices: [
-			{
-				id: '0b5d',
-				text: '2000年',
-			},
-			{
-				id: 'aaab',
-				text: '2002年',
-			},
-			{
-				id: 'f3e6',
-				text: '2004年',
-			},
-			{
-				id: 'ea50',
-				text: '2006年',
-			},
-		],
-	},
-	{
 		id: 'b8a9',
 		day: 1,
 		category: 'service',
 		title: 'ZOZOTOWNアプリの、メニューの並びで正しいものはどれ？',
+		hint: 'ZOZOTOWNアプリをダウンロードして確認しよう！',
 		choices: [
 			{
 				id: '9578',
@@ -331,6 +284,7 @@ export const QUESTIONS = [
 		category: 'service',
 		title:
 			'全体に施されたドットマーカーをスマートフォンのカメラで360度撮影することで、高精度な計測を可能とした採寸用ボディースーツ旧ZOZOSUITが発表されたのはいつ？',
+		hint: 'ZOZOの会社沿革（ https://corp.zozo.com/about/history/ ）を見ると・・・？',
 		choices: [
 			{
 				id: '8746',
@@ -355,6 +309,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'service',
 		title: 'WEARへの移行で2015年に終了したサービスは？',
+		hint: '元々は「全国ショップ検索ナビゲーションサイト」として存在したサービスでした。',
 		choices: [
 			{
 				id: '0b98',
@@ -379,6 +334,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'ir',
 		title: '2026年3月期の連結商品取扱高は？',
+		hint: 'ZOZOのIR資料（ https://corp.zozo.com/ir/20260731-20273_1q/ ）を見ると・・・？',
 		choices: [
 			{
 				id: 'd4ad',
@@ -403,6 +359,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'culture',
 		title: 'ZOZOの企業理念として正しいものはどれ？',
+		hint: 'ZOZOの企業理念（ https://corp.zozo.com/about/philosophy/ ）を見ると・・・？',
 		choices: [
 			{
 				id: 'cac7',
@@ -427,6 +384,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'creative',
 		title: 'ZOZOTOWNのWebサイトのローディングで使われている「ギターマン」。正しい向きはどっち？',
+		hint: 'ZOZOTOWNのWebサイトを見て確認しよう！',
 		choices: [
 			{
 				id: 'a0e6',
@@ -447,6 +405,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'creative',
 		title: 'ZOZO NEXTが始動した、日本の伝統工芸×先端技術プロジェクト名は？',
+		hint: 'ZOZO NEXTのページ（ https://zozonext.com/ ）から探してみよう！',
 		choices: [
 			{
 				id: '9666',
@@ -471,6 +430,7 @@ export const QUESTIONS = [
 		day: 1,
 		category: 'ios',
 		title: 'ZOZOTOWN iOSアプリでフルSwiftUIで実装されている画面はどれ？',
+		hint: '難問！',
 		choices: [
 			{
 				id: '3848',
@@ -491,6 +451,56 @@ export const QUESTIONS = [
 			{
 				id: '8697',
 				text: 'マイページ',
+			},
+		],
+	},
+	{
+		id: 'd448',
+		day: 1,
+		category: 'history',
+		title: 'ZOZOの会社設立記念日は何月何日？',
+		hint: 'ZOZOの会社沿革（ https://corp.zozo.com/about/history/ ）を見ると・・・？',
+		choices: [
+			{
+				id: '2d3f',
+				text: '12月15日',
+			},
+			{
+				id: 'a4c9',
+				text: '5月21日',
+			},
+			{
+				id: '7e59',
+				text: '12月11日',
+			},
+			{
+				id: '581c',
+				text: '2月15日',
+			},
+		],
+	},
+	{
+		id: 'd0f8',
+		day: 1,
+		category: 'history',
+		title: 'ZOZOTOWNが開設されたのはいつ？',
+		hint: 'ZOZOの会社沿革（ https://corp.zozo.com/about/history/ ）を見ると・・・？',
+		choices: [
+			{
+				id: '0b5d',
+				text: '2000年',
+			},
+			{
+				id: 'aaab',
+				text: '2002年',
+			},
+			{
+				id: 'f3e6',
+				text: '2004年',
+			},
+			{
+				id: 'ea50',
+				text: '2006年',
 			},
 		],
 	},

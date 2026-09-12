@@ -18,6 +18,8 @@ export interface PublicQuestion {
 	// question-images/ 配下のファイル名 (来場者アプリでは public/questions/ から配信)
 	image?: string;
 	imageAlt?: string;
+	// 出題画面に表示するヒント (URLを含む場合は別タブで開くリンクとして表示される)
+	hint?: string;
 	code?: string;
 	lang?: 'ts' | 'js';
 	choices: AnswerChoice[];

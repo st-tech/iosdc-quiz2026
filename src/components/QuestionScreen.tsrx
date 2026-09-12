@@ -63,6 +63,20 @@ export component QuestionScreen(&{
 				</label>
 			}
 		</fieldset>
+		if (question.hint) {
+			<p class="question-hint">
+				{'ヒント: '}
+				for (const part of hintParts(question.hint); index partIndex) {
+					if (part.isUrl) {
+						<a href={part.text} target="_blank" rel="noopener noreferrer">
+							{part.text}
+						</a>
+					} else {
+						{part.text}
+					}
+				}
+			</p>
+		}
 		<div class="actions">
 			<button type="button" onClick={() => onBack()}>
 				{index === 0 ? 'Top' : 'Back'}
@@ -74,6 +88,21 @@ export component QuestionScreen(&{
 	</section>
 
 	<style>
+		.question-hint {
+			margin: 0;
+			padding: 0.55rem 0.65rem;
+			border-left: 3px solid #f0c674;
+			background: #1a160e;
+			color: #cfc6b0;
+			font-size: 0.82rem;
+			line-height: 1.6;
+			overflow-wrap: anywhere;
+		}
+
+		.question-hint a {
+			color: #f0c674;
+		}
+
 		.question {
 			display: grid;
 			gap: 0.8rem;
@@ -211,4 +240,15 @@ function questionProgressId(questionId: string): string {
 
 function answerGroupName(questionId: string): string {
 	return `answer-${questionId}`;
+}
+
+interface HintPart {
+	text: string;
+	isUrl: boolean;
+}
+
+function hintParts(hint: string): HintPart[] {
+	return hint.split(/(https?:\/\/[^\s）」]+)/g).filter((part) => part.length > 0).map(
+		(part) => ({ text: part, isUrl: part.startsWith('http') }),
+	);
 }
